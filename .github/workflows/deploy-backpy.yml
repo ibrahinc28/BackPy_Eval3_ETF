@@ -59,7 +59,7 @@ jobs:
             --query taskDefinition \
             --output json > task-definition.json
 
-      # ── 6. Inyectar la nueva imagen en la task definition ─────────────────
+      # ── 6. Inyectar la nueva imagen en la task definition ───────────────
       - name: Renderizar nueva task definition con la imagen actualizada
         id: render-task-def
         uses: aws-actions/amazon-ecs-render-task-definition@v1
